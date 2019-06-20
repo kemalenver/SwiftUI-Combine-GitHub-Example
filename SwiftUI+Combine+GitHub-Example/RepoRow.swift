@@ -16,7 +16,6 @@ struct RepoRow: View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
                 
-                
                 Text(repo.name)
                     .font(Font.headline)
                     .foregroundColor(Color.white)
@@ -47,8 +46,9 @@ struct RepoRow: View {
             }
             }
             .padding()
-            .background(Color.blue)
+            .background(Color.init(red: 0.6, green: 0.6, blue: 1))
             .cornerRadius(5)
+            .border(Color.gray, width: 3.0, cornerRadius: 5.0)
     }
 }
 

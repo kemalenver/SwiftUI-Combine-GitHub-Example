@@ -1,6 +1,6 @@
 # SwiftUI + Combine Example Project
 
-<img src="./screenshot/example.png" width="320">
+<img src="./screenshot/screen.png" width="320">
 
 ## Requires 
 * XCode 11 beta 2 to work.  This is when Apple included Foundation support for Combine

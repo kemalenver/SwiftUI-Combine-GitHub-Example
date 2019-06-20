@@ -15,20 +15,33 @@ struct ContentView : View {
     
     var body: some View {
         
-        VStack {
-            HStack {
-                TextField($searchString)
-                
-                Button(action: {
-                    self.viewModel.loadFromAPI(self.searchString)
-                }) {
-                    Text("Search Repos")
+        NavigationView {
+            VStack {
+                HStack {
+                    TextField($searchString)
+                    
+                    Button(action: {
+                        self.viewModel.loadFromAPI(self.searchString)
+                    }) {
+                        Text("Search Repos")
+                            .font(Font.headline)
+                            .foregroundColor(Color.white)
+                    }
                 }
-            }.padding()
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(20)
+                    .border(Color.green, width: 6.0, cornerRadius: 20.0)
+                
+                List(viewModel.repos) { repo in
+                    NavigationButton(destination: Text("Tapped \(repo.name)")) {
+                        RepoRow(repo: repo)
+                    }
+                }
+ 
+            }.padding(.top)
             
-            List(viewModel.repos) { repo in
-                RepoRow(repo: repo)
-            }
+            .navigationBarTitle(Text("Repositories"), displayMode: .inline)
         }
     }
 }
