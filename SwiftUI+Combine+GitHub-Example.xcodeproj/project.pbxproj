@@ -13,6 +13,11 @@
 		0A8D83DD22BB58BD00FB0AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D83DC22BB58BD00FB0AD9 /* Assets.xcassets */; };
 		0A8D83E022BB58BD00FB0AD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D83DF22BB58BD00FB0AD9 /* Preview Assets.xcassets */; };
 		0A8D83E322BB58BD00FB0AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D83E122BB58BD00FB0AD9 /* LaunchScreen.storyboard */; };
+		0A8D83EB22BB592C00FB0AD9 /* SearchReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D83EA22BB592C00FB0AD9 /* SearchReposViewModel.swift */; };
+		0A8D83EF22BB5AF800FB0AD9 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D83EE22BB5AF800FB0AD9 /* Repo.swift */; };
+		0A8D83F122BB60B100FB0AD9 /* repos_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D83F022BB60B100FB0AD9 /* repos_response.json */; };
+		0A8D83F222BB688100FB0AD9 /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D83EC22BB597E00FB0AD9 /* RepoRow.swift */; };
+		0AB0C83B22BB8BA500B0823D /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0C83A22BB8BA500B0823D /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0A8D83DF22BB58BD00FB0AD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A8D83E222BB58BD00FB0AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8D83E422BB58BD00FB0AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8D83EA22BB592C00FB0AD9 /* SearchReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReposViewModel.swift; sourceTree = "<group>"; };
+		0A8D83EC22BB597E00FB0AD9 /* RepoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
+		0A8D83EE22BB5AF800FB0AD9 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		0A8D83F022BB60B100FB0AD9 /* repos_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = repos_response.json; sourceTree = "<group>"; };
+		0AB0C83A22BB8BA500B0823D /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,14 @@
 		0A8D83D522BB58B900FB0AD9 /* SwiftUI+Combine+GitHub-Example */ = {
 			isa = PBXGroup;
 			children = (
+				0A8D83F022BB60B100FB0AD9 /* repos_response.json */,
 				0A8D83D622BB58B900FB0AD9 /* AppDelegate.swift */,
 				0A8D83D822BB58B900FB0AD9 /* SceneDelegate.swift */,
 				0A8D83DA22BB58B900FB0AD9 /* ContentView.swift */,
+				0A8D83EC22BB597E00FB0AD9 /* RepoRow.swift */,
+				0AB0C83A22BB8BA500B0823D /* PreviewData.swift */,
+				0A8D83EA22BB592C00FB0AD9 /* SearchReposViewModel.swift */,
+				0A8D83EE22BB5AF800FB0AD9 /* Repo.swift */,
 				0A8D83DC22BB58BD00FB0AD9 /* Assets.xcassets */,
 				0A8D83E122BB58BD00FB0AD9 /* LaunchScreen.storyboard */,
 				0A8D83E422BB58BD00FB0AD9 /* Info.plist */,
@@ -135,6 +150,7 @@
 			files = (
 				0A8D83E322BB58BD00FB0AD9 /* LaunchScreen.storyboard in Resources */,
 				0A8D83E022BB58BD00FB0AD9 /* Preview Assets.xcassets in Resources */,
+				0A8D83F122BB60B100FB0AD9 /* repos_response.json in Resources */,
 				0A8D83DD22BB58BD00FB0AD9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8D83EB22BB592C00FB0AD9 /* SearchReposViewModel.swift in Sources */,
 				0A8D83D722BB58B900FB0AD9 /* AppDelegate.swift in Sources */,
+				0A8D83EF22BB5AF800FB0AD9 /* Repo.swift in Sources */,
 				0A8D83D922BB58B900FB0AD9 /* SceneDelegate.swift in Sources */,
+				0AB0C83B22BB8BA500B0823D /* PreviewData.swift in Sources */,
+				0A8D83F222BB688100FB0AD9 /* RepoRow.swift in Sources */,
 				0A8D83DB22BB58B900FB0AD9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
